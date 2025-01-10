@@ -28,6 +28,6 @@ window.onload = function() {
     newSuit2.style.color = "black";
   } else {
     newSuit2.style.color == "red";
-    newSuit2.style.transform = "rotate(180deg)";
   }
+  newSuit2.style.transform = "rotate(180deg)";
 };
