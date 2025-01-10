@@ -10,8 +10,8 @@ window.onload = function() {
 
   const number = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "Q", "K", "j"];
   const suit = ["♦", "♥", "♠", "♣"];
-  let randNumber = Math.floor(Math.random() * 12);
-  let randSuit = Math.floor(Math.random() * 4);
+  let randNumber = Math.floor(Math.random() * number.length);
+  let randSuit = Math.floor(Math.random() * suit.length);
   let numbs = document.getElementById("numb");
   numbs.innerHTML = number[randNumber];
   let newSuit = document.getElementById("topSuit");
