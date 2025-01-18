@@ -10,24 +10,28 @@ window.onload = function() {
 
   const number = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "Q", "K", "j"];
   const suit = ["♦", "♥", "♠", "♣"];
+
   let randNumber = Math.floor(Math.random() * number.length);
   let randSuit = Math.floor(Math.random() * suit.length);
+
   let numbs = document.getElementById("numb");
   numbs.innerHTML = number[randNumber];
-  let newSuit = document.getElementById("topSuit");
-  newSuit.innerHTML = suit[randSuit];
+
+  let randomSuitTop = document.getElementById("topSuit");
+  randomSuitTop.innerHTML = suit[randSuit];
+
   if (suit[randSuit] === "♠" || suit[randSuit] == "♣") {
-    newSuit.style.color = "black";
+    randomSuitTop.style.color = "black";
   } else {
-    newSuit.style.color == "red";
+    randomSuitTop.style.color == "red";
   }
-  let newSuit2 = document.getElementById("bottomSuit");
-  newSuit2.innerHTML = suit[randSuit];
+
+  let randomSuitBottom = document.getElementById("bottomSuit");
+  randomSuitBottom.innerHTML = suit[randSuit];
 
   if (suit[randSuit] === "♠" || suit[randSuit] === "♣") {
-    newSuit2.style.color = "black";
+    randomSuitBottom.style.color = "black";
   } else {
-    newSuit2.style.color == "red";
+    randomSuitBottom.style.color == "red";
   }
-  newSuit2.style.transform = "rotate(180deg)";
 };
